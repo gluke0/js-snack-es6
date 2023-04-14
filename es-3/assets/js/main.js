@@ -24,7 +24,7 @@ let min,  max;
 let check = true; 
 do {
 
-    alert(`SCEGLI DUE NUMERI DA 0 A ${techBrands.length - 1}`);
+    alert(`SCEGLI DUE NUMERI DA 0 A ${techBrands.length - 1} LASCIANDO ALMENO UN NUMERO TRA DI ESSI`);
 
     min = parseInt(prompt('Primo Numero'));
     max = parseInt(prompt('Secondo Numero'));
@@ -39,7 +39,7 @@ do {
 
 // filtro
 let portion = techBrands.filter( (x, i) => {
-    return i >= min && i <= max
+    return i > min && i < max
 });
 
 // stampo in pagina
