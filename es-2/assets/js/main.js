@@ -44,6 +44,6 @@ teams.forEach( ( data ) => {
 });
 
 const teamFouls = teams.map( ( {team, fouls} ) => 
-     { return team + fouls});
+    ({team, fouls}));
      
 console.log(teamFouls)
