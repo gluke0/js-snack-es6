@@ -1,0 +1,9 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+text-transform: uppercase;
+font-weight: bolder;
+font-size: 2rem;
+}
