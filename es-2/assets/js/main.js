@@ -47,3 +47,4 @@ const teamFouls = teams.map( ( {team, fouls} ) =>
     ({team, fouls}));
      
 console.log(teamFouls)
+ 
