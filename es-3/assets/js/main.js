@@ -18,6 +18,30 @@ const techBrands = [
     'Leica',
     'Meta',
     'Oracle'
-]
+];
 
-console.log(techBrands)
+let min,  max;
+let check = true; 
+do {
+
+    alert(`SCEGLI DUE NUMERI DA 0 A ${techBrands.length - 1}`);
+
+    min = parseInt(prompt('Primo Numero'));
+    max = parseInt(prompt('Secondo Numero'));
+
+    if (min < max && min >= 0 && max <= techBrands.length - 1) {
+        check = false;
+    } else {
+        alert('mi dispiace ma devi inserire dei nuovi numeri... PS: prova ad avere il numero minore al primo posto');
+    }
+
+} while (check);
+
+// filtro
+let portion = techBrands.filter( (x, i) => {
+    return i >= min && i <= max
+});
+
+// stampo in pagina
+document.querySelector(".stampa").innerHTML = 
+`<div> ${portion.join(', ')} </div>`
