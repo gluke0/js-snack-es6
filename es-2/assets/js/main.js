@@ -46,5 +46,25 @@ teams.forEach( ( data ) => {
 const teamFouls = teams.map( ( {team, fouls} ) => 
     ({team, fouls}));
      
-console.log(teamFouls)
+console.log(teamFouls);
  
+
+// soluzione con forEach //
+/*
+
+let newTeamFouls = [];
+teams.forEach ((data) => {
+    
+        const { team, fouls } = data;
+
+        newTeamFouls.push(
+        {
+            team,
+            fouls
+        }
+    )
+});
+
+console.log(newTeamFouls);
+
+*/ 

@@ -31,7 +31,9 @@ let bikes = [
     }
   ];
 
-let lightBike = bikes[0];
+
+// creo variabile per fare poi condizione di controllo quindi prendo primo oggetto dell'array  
+let lightBike = bikes[0]; 
 
 for (let i = 0; i < bikes.length; i++) {
   let {weight} = bikes[i]; 
@@ -47,8 +49,8 @@ let {brand, material, weight} = lightBike;
 document.querySelector(".bike").innerHTML = 
 `<div> tra le bici ancora disponibili per la vendita quella più leggera è: </div>
 <ul>
-    <li> <strong>Brand</strong>: ${brand} </li>
-    <li> <strong>Materiale</strong>: ${material} </li>
-    <li> <strong>Peso</strong>: ${weight} KG </li>
+    <li> <strong> Brand </strong>: ${brand} </li>
+    <li> <strong> Materiale </strong>: ${material} </li>
+    <li> <strong> Peso </strong>: ${weight} KG </li>
 </ul>
 `
